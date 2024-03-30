@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+
+    <head>
+        <title>SOLICITAÇÃO CAUTELA</title>
+        <script type="text/javascript" src="upText.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--===============================================================================================-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+        <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="css/util.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <!--===============================================================================================-->
+    </head>
+
+<body>
+
+
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form" method="post" action="pdfgenerator.php">
+                <span class="contact100-form-title">
+                    FORMULÁRIO PARA SOLICITAÇÃO DE MATERIAL NA TIECOM
+                </span>
+
+
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Nome Completo</span>
+                    <input class="input100" type="text" name="name" required="required" placeholder="Nome Completo"
+                        onkeyup="up(this)">
+                </div>
+
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100">
+                    <span class="label-input100">Posto/Grad</span>
+                    <div>
+                        <select name="pg" class="js-select2" required="required">
+                            <option value=''> Selecione</option>
+                            <option value='Ten Brig'>Ten Brig</option>
+                            <option value='Maj Brig'>Maj Brig</option>
+                            <option value='Brig'>Brig</option>
+                            <option value='Cel'>Cel</option>
+                            <option value='Ten Cel'>Ten Cel</option>
+                            <option value='Maj'>Maj</option>
+                            <option value='Cap'>Cap</option>
+                            <option value='1º Ten'>1º Ten</option>
+                            <option value='2º Ten'>2º Ten</option>
+                            <option value='Asp'>Asp</option>
+                            <option value='Cad'>Cad</option>
+                            <option value='SO'>SO</option>
+                            <option value='1S'>1S</option>
+                            <option value='2S'>2S</option>
+                            <option value='3S'>3S</option>
+                            <option value='Al'>Al</option>
+                            <option value='Cb'>Cb</option>
+                            <option value='TM'>TM</option>
+                            <option value='T1'>T1</option>
+                            <option value='T2'>T2</option>
+                            <option value='S1'>S1</option>
+                            <option value='S2'>S2</option>
+                            <option value='CV'>CV</option>
+                        </select>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                </div>
+
+
+                
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100 check-list-box">
+                    <span class="label-input100">Material</span>
+
+                    <div style="margin-top: 16px;" class="checkbox-list" id="checkboxDiv">
+                            <div style="margin-top: 16px;" class="checkbox-list">
+                            <div class="check-list-material">
+                                <input type="checkbox" name="material[]" id="item0" class="checkbox-item"
+                                    value="Caixa de Som" />
+                                <label for="item0">Caixa de Som Bluetooh</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="material[]" id="item1" class="checkbox-item"
+                                    value="Cabo P10/P2(celular)" />
+                                <label for="item1">Cabo P2/P10(celular)</label>
+                            </div>
+                            <div class="check-list-material">
+                                <input type="checkbox" name="material[]" id="item2" class="checkbox-item"
+                                    value="Microfone com cabo" />
+                                <label for="item2">Microfone</label>
+                            </div>
+                            <div class="check-list-material">
+                                <input type="checkbox" name="material[]" id="item3" class="checkbox-item" value="Extensão" />
+                                <label for="item3">Extensão</label>
+                            </div>
+                            <div class="check-list-material">
+                                <input type="checkbox" name="material[]" id="item4" class="checkbox-item" value="Projetor" />
+                                <label for="item4">Projetor</label>
+                            </div>
+                            <div class="check-list-material">
+                                <input type="checkbox" name="material[]" id="item5" class="checkbox-item"
+                                    value="Tela de Projeção" />
+                                <label for="item5">Tela de Projeção</label>
+                            </div>
+                            <div class="check-list-material">
+                                <input type="checkbox" name="material[]" id="item6" class="checkbox-item"
+                                    value="Ipad com carregador" />
+                                <label for="item6">Ipad com carregador</label>
+                            </div>
+                            <div class="check-list-material">
+                                <input type="checkbox" name="material[]" id="item7" class="checkbox-item"
+                                    value="Notebook com fonte" />
+                                <label for="item7">Notebook com fonte</label>
+                            </div>
+                        
+                        
+                        
+                            <div class="dropDownSelect2"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Nome de guerra</span>
+                    <input class="input100" type="text" name="guerra" required="required" placeholder="Nome de Guerra"
+                        onkeyup="up(this)">
+                </div>
+
+
+
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Seção/Setor </span>
+                    <input class="input100" type="text" name="setor" required="required" placeholder="Seção/Setor"
+                        onkeyup="up(this)">
+                </div>
+
+
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Ramal</span>
+                    <input class="input100" type="tel" name="ramal" required="required" placeholder="Ramal">
+                </div>
+
+
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                        <span>
+                            Enviar
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script>
+        $(".js-select2").each(function () {
+            $(this).select2({
+                minimumResultsForSearch: 20,
+                dropdownParent: $(this).next('.dropDownSelect2')
+            });
+
+
+            $(".js-select2").each(function () {
+                $(this).on('select2:close', function (e) {
+                    if ($(this).val() == "Please chooses") {
+                        $('.js-show-service').slideUp();
+                    } else {
+                        $('.js-show-service').slideUp();
+                        $('.js-show-service').slideDown();
+                    }
+                });
+            });
+        })
+    </script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/noui/nouislider.min.js"></script>
+    <script>
+        var filterBar = document.getElementById('filter-bar');
+
+        noUiSlider.create(filterBar, {
+            start: [1500, 3900],
+            connect: true,
+            range: {
+                'min': 1500,
+                'max': 7500
+            }
+        });
+
+        var skipValues = [
+            document.getElementById('value-lower'),
+            document.getElementById('value-upper')
+        ];
+
+        filterBar.noUiSlider.on('update', function (values, handle) {
+            skipValues[handle].innerHTML = Math.round(values[handle]);
+            $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+            $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+        });
+    </script>
+
+	<script src="js/main.js"></script>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+
+</body>
+
+</html>

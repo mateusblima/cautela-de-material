@@ -1,0 +1,1 @@
+var dados = ('[ { "name": "Caixa de Som Bluetooh", "id": "item0" }, { "name": "Cabo P2/P10", "id": "item1" }, { "name": "Microfone com Cabo", "id": "item2" },{ "name": "Projetor, cabo de força e vídeo", "id": "item3" }, { "id":"item4", "name": "Tela de Projeção" }, { "name":"Ipad com carregador", "id":"item5" }, {"name":"Notebook", "id":"item6"}]');
